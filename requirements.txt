@@ -1,0 +1,48 @@
+# Dependencies for FinanTidy Project
+
+# Core GUI Framework
+PySide6>=6.6.0
+
+# Database ORM
+SQLAlchemy>=2.0.0
+alembic>=1.12.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Plotting and charts
+pyqtgraph>=0.13.0
+matplotlib>=3.7.0
+
+# Excel/CSV export
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+
+# HTTP requests for API integration
+requests>=2.31.0
+httpx>=0.25.0
+
+# Encryption and security
+cryptography>=41.0.0
+bcrypt>=4.0.0
+
+# Configuration and environment
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# Logging
+loguru>=0.7.0
+
+# Date/time handling
+python-dateutil>=2.8.0
+
+# Development dependencies
+pytest>=7.4.0
+pytest-qt>=4.2.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.5.0
+
+# Packaging
+pyinstaller>=5.13.0
