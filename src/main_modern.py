@@ -50,14 +50,7 @@ def main():
         app.setOrganizationName("Sodalite Development")
         app.setOrganizationDomain("finantiday.com")
         
-        # Set application icon (if exists)
-        # app.setWindowIcon(QIcon("resources/icons/app_icon.png"))
-        
         # Initialize translator for internationalization
-        translator = QTranslator()
-        locale = QLocale.system().name()
-        
-        # Load Vietnamese translation if available
         translator = QTranslator()
         locale = QLocale.system().name()
         
@@ -71,7 +64,7 @@ def main():
         main_app.show()
         
         # Start event loop
-        return app.exec()
+        sys.exit(app.exec())
 
 
 if __name__ == "__main__":

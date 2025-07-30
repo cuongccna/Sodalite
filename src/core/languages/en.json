@@ -1,0 +1,179 @@
+{
+  "app": {
+    "title": "FinanTidy",
+    "name": "FinanTidy",
+    "welcome": "Welcome to FinanTidy",
+    "subtitle": "Modern financial management system with Viettel eInvoice integration",
+    "version": "FinanTidy v2.0 - Professional Edition with Viettel eInvoice Integration"
+  },
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "close": "Close",
+    "apply": "Apply",
+    "reset": "Reset",
+    "confirm": "Confirm",
+    "warning": "Warning",
+    "error": "Error",
+    "success": "Success",
+    "info": "Information"
+  },
+  "login": {
+    "title": "FinanTidy Login",
+    "username": "Username",
+    "username_placeholder": "Enter your username",
+    "password": "Password",
+    "password_placeholder": "Enter your password",
+    "remember_me": "Remember me",
+    "forgot_password": "Forgot Password?",
+    "login_button": "🔐 SIGN IN",
+    "cancel_button": "❌ CANCEL",
+    "demo_title": "🔑 Default Login Credentials",
+    "demo_info": "Username: admin  •  Password: admin",
+    "login_error": "Login Error",
+    "login_failed": "Login Failed",
+    "invalid_credentials": "Invalid username or password!",
+    "fill_all_fields": "Please enter both username and password",
+    "signing_in": "Signing In..."
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "invoices": "Invoices",
+    "providers": "Providers",
+    "analytics": "Analytics",
+    "transactions": "Transactions",
+    "reports": "Reports"
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {name}!",
+    "welcome_subtitle": "Here's what's happening with your finances today",
+    "recent_activity": "Recent Activity",
+    "quick_actions": "Quick Actions",
+    "quick_overview": "QUICK OVERVIEW",
+    "view_all": "View All",
+    "total_invoices": "Total Invoices",
+    "providers": "Providers",
+    "demo_user": "Demo User",
+    "demo_company": "Demo Company",
+    "stats": {
+      "revenue": "Total Revenue",
+      "pending": "Pending",
+      "invoices": "Total Invoices",
+      "providers": "Providers",
+      "overdue": "Overdue"
+    }
+  },
+  "actions": {
+    "create_invoice": "📄 Create Invoice",
+    "add_provider": "🏪 Add Provider",
+    "record_payment": "💰 Record Payment",
+    "generate_report": "📈 Generate Report",
+    "viettel_einvoice": "📧 Viettel eInvoice",
+    "system_settings": "⚙️ System Settings",
+    "view_analytics": "📊 View Analytics"
+  },
+  "settings": {
+    "title": "System Settings",
+    "subtitle": "Configure your FinanTidy application preferences",
+    "language": {
+      "title": "Language Settings",
+      "description": "Choose your preferred language for the application interface",
+      "restart_note": "Note: Some interface elements may require restarting the application to fully update."
+    },
+    "language_desc": "Select interface display language",
+    "appearance": "Appearance",
+    "notifications": {
+      "title": "Notification Settings"
+    },
+    "save": "Save Settings",
+    "reset": "Reset",
+    "cancel": "Cancel",
+    "save_success": "Settings saved successfully!",
+    "categories": "SETTINGS CATEGORIES",
+    "company": {
+      "title": "Company Information",
+      "description": "Configure your company details for invoices and documents",
+      "name": "Company Name",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "display": {
+      "title": "Display Settings"
+    },
+    "backup": {
+      "title": "Backup Settings"
+    },
+    "security": {
+      "title": "Security Settings"
+    },
+    "invoice": {
+      "title": "Invoice Settings"
+    },
+    "viettel_einvoice": {
+      "title": "Viettel eInvoice Settings",
+      "description": "Configure Viettel eInvoice API integration for electronic invoice processing",
+      "connection_status": "Connection Status",
+      "not_configured": "Not Configured",
+      "configuration": "Configuration",
+      "configure": "Configure API",
+      "test_connection": "Test Connection",
+      "import_config": "Import Config",
+      "info": "Information",
+      "info_content": "Viettel eInvoice integration allows you to:\n• Automatically create electronic invoices\n• Submit invoices to tax authorities\n• Track invoice status and validation\n• Comply with Vietnamese e-invoice regulations\n\nContact Viettel for API credentials and configuration details.",
+      "config_title": "Viettel Configuration",
+      "config_message": "Viettel eInvoice configuration window will be available soon!",
+      "test_title": "Test Connection",
+      "test_message": "Connection test functionality will be available after configuration.",
+      "import_title": "Import Viettel Configuration",
+      "import_success_title": "Import Success",
+      "import_success_message": "Configuration imported from: {}"
+    },
+    "reset_confirm_title": "Reset Settings",
+    "reset_confirm_message": "This will reset all settings to their default values.\nAre you sure you want to continue?",
+    "reset_success_title": "Reset",
+    "reset_success_message": "Settings reset to defaults successfully!"
+  },
+  "modules": {
+    "invoices": {
+      "title": "📄 Invoices Management",
+      "description": "Invoice management module is being prepared.\nFeatures: Create, edit, send invoices, track payments."
+    },
+    "providers": {
+      "title": "🏪 Providers Management",
+      "description": "Provider management module is being prepared.\nFeatures: Add providers, manage contracts, track payments."
+    },
+    "analytics": {
+      "title": "📊 Analytics Dashboard",
+      "description": "Analytics module is being prepared.\nFeatures: Financial reports, charts, business insights."
+    },
+    "transactions": {
+      "title": "💳 Transactions Management",
+      "description": "Transaction module is being prepared.\nFeatures: Record transactions, categorize expenses, track income."
+    },
+    "reports": {
+      "title": "📈 Reports & Analysis",
+      "description": "Reports module is being prepared.\nFeatures: Generate reports, export data, financial analysis."
+    },
+    "coming_soon": "🚧 Coming Soon"
+  },
+  "buttons": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "settings": "⚙️ Settings",
+    "logout": "🔴 Logout"
+  },
+  "messages": {
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information",
+    "coming_soon": "This module will be available soon!",
+    "logout_confirm": "Are you sure you want to logout?\n\nUser: {user}\nCompany: {company}"
+  }
+}

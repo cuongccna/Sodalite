@@ -1,0 +1,185 @@
+{
+  "app": {
+    "title": "FinanTidy",
+    "name": "FinanTidy",
+    "welcome": "Chào mừng đến với FinanTidy",
+    "subtitle": "Hệ thống quản lý tài chính hiện đại với tích hợp hóa đơn điện tử Viettel",
+    "version": "FinanTidy v2.0 - Phiên bản chuyên nghiệp với tích hợp hóa đơn điện tử Viettel"
+  },
+  "common": {
+    "ok": "Đồng ý",
+    "cancel": "Hủy",
+    "yes": "Có",
+    "no": "Không",
+    "save": "Lưu",
+    "close": "Đóng",
+    "apply": "Áp dụng",
+    "reset": "Đặt lại",
+    "confirm": "Xác nhận",
+    "warning": "Cảnh báo",
+    "error": "Lỗi",
+    "success": "Thành công",
+    "info": "Thông tin"
+  },
+  "login": {
+    "title": "Đăng nhập FinanTidy",
+    "form_title": "Đăng nhập vào tài khoản",
+    "username_label": "Tên đăng nhập",
+    "username": "Tên đăng nhập",
+    "username_placeholder": "Nhập tên đăng nhập của bạn",
+    "password_label": "Mật khẩu",
+    "password": "Mật khẩu",
+    "password_placeholder": "Nhập mật khẩu của bạn",
+    "remember_me": "Ghi nhớ đăng nhập",
+    "forgot_password": "Quên mật khẩu?",
+    "login_button": "Đăng nhập",
+    "cancel_button": "❌ HỦY BỎ",
+    "demo_title": "🔑 Thông tin đăng nhập mặc định",
+    "demo_info": "Tên đăng nhập: admin  •  Mật khẩu: admin",
+    "error_title": "Đăng nhập thất bại",
+    "error_message": "Tên đăng nhập hoặc mật khẩu không đúng!",
+    "default_credentials": "Thông tin đăng nhập mặc định:",
+    "login_error": "Lỗi đăng nhập",
+    "login_failed": "Đăng nhập thất bại",
+    "invalid_credentials": "Tên đăng nhập hoặc mật khẩu không đúng!",
+    "fill_all_fields": "Vui lòng nhập đầy đủ thông tin đăng nhập",
+    "signing_in": "Đang đăng nhập..."
+  },
+  "navigation": {
+    "dashboard": "Tổng quan",
+    "invoices": "Hóa đơn",
+    "providers": "Nhà cung cấp",
+    "analytics": "Phân tích",
+    "transactions": "Giao dịch",
+    "reports": "Báo cáo"
+  },
+  "dashboard": {
+    "welcome": "Chào mừng trở lại, {name}!",
+    "welcome_subtitle": "Đây là tình hình tài chính của bạn hôm nay",
+    "recent_activity": "Hoạt động Gần đây",
+    "quick_actions": "Thao tác Nhanh",
+    "quick_overview": "TỔNG QUAN NHANH",
+    "view_all": "Xem tất cả",
+    "total_invoices": "Tổng hóa đơn",
+    "providers": "Nhà cung cấp",
+    "demo_user": "Người dùng Demo",
+    "demo_company": "Công ty Demo",
+    "stats": {
+      "revenue": "Tổng doanh thu",
+      "pending": "Chờ thanh toán",
+      "invoices": "Tổng hóa đơn",
+      "providers": "Nhà cung cấp",
+      "overdue": "Quá hạn"
+    }
+  },
+  "actions": {
+    "create_invoice": "📄 Tạo hóa đơn",
+    "add_provider": "🏪 Thêm nhà cung cấp",
+    "record_payment": "💰 Ghi nhận thanh toán",
+    "generate_report": "📈 Tạo báo cáo",
+    "viettel_einvoice": "📧 Viettel eInvoice",
+    "system_settings": "⚙️ Cài đặt hệ thống",
+    "view_analytics": "📊 Xem phân tích"
+  },
+  "settings": {
+    "title": "Cài đặt Hệ thống",
+    "subtitle": "Cấu hình tùy chọn ứng dụng FinanTidy của bạn",
+    "language": {
+      "title": "Cài đặt ngôn ngữ",
+      "description": "Chọn ngôn ngữ ưa thích cho giao diện ứng dụng",
+      "restart_note": "Lưu ý: Một số yếu tố giao diện có thể cần khởi động lại ứng dụng để cập nhật hoàn toàn."
+    },
+    "language_desc": "Chọn ngôn ngữ hiển thị giao diện",
+    "appearance": "Giao diện",
+    "notifications": {
+      "title": "Cài đặt thông báo"
+    },
+    "save": "Lưu cài đặt",
+    "reset": "Đặt lại",
+    "cancel": "Hủy bỏ",
+    "save_success": "Cài đặt đã được lưu thành công!",
+    "categories": "DANH MỤC CÀI ĐẶT",
+    "company": {
+      "title": "Thông tin công ty",
+      "description": "Cấu hình thông tin công ty cho hóa đơn và tài liệu",
+      "name": "Tên công ty",
+      "address": "Địa chỉ",
+      "phone": "Số điện thoại",
+      "email": "Email"
+    },
+    "display": {
+      "title": "Cài đặt hiển thị"
+    },
+    "backup": {
+      "title": "Cài đặt sao lưu"
+    },
+    "security": {
+      "title": "Cài đặt bảo mật"
+    },
+    "invoice": {
+      "title": "Cài đặt hóa đơn"
+    },
+    "viettel_einvoice": {
+      "title": "Cài đặt hóa đơn điện tử Viettel",
+      "description": "Cấu hình tích hợp API Viettel eInvoice để xử lý hóa đơn điện tử",
+      "connection_status": "Trạng thái kết nối",
+      "not_configured": "Chưa được cấu hình",
+      "configuration": "Cấu hình",
+      "configure": "Cấu hình API",
+      "test_connection": "Kiểm tra kết nối",
+      "import_config": "Nhập cấu hình",
+      "info": "Thông tin",
+      "info_content": "Tích hợp Viettel eInvoice cho phép bạn:\n• Tự động tạo hóa đơn điện tử\n• Gửi hóa đơn tới cơ quan thuế\n• Theo dõi trạng thái và xác thực hóa đơn\n• Tuân thủ quy định hóa đơn điện tử Việt Nam\n\nLiên hệ Viettel để có thông tin đăng nhập API và chi tiết cấu hình.",
+      "config_title": "Cấu hình Viettel",
+      "config_message": "Cửa sổ cấu hình Viettel eInvoice sẽ sớm có sẵn!",
+      "test_title": "Kiểm tra kết nối",
+      "test_message": "Chức năng kiểm tra kết nối sẽ có sẵn sau khi cấu hình.",
+      "import_title": "Nhập cấu hình Viettel",
+      "import_success_title": "Nhập thành công",
+      "import_success_message": "Cấu hình đã được nhập từ: {}"
+    },
+    "reset_confirm_title": "Đặt lại cài đặt",
+    "reset_confirm_message": "Điều này sẽ đặt lại tất cả cài đặt về giá trị mặc định.\nBạn có chắc chắn muốn tiếp tục không?",
+    "reset_success_title": "Đặt lại",
+    "reset_success_message": "Cài đặt đã được đặt lại về mặc định thành công!"
+  },
+  "modules": {
+    "invoices": {
+      "title": "📄 Quản lý Hóa đơn",
+      "description": "Module quản lý hóa đơn đang được chuẩn bị.\nTính năng: Tạo, sửa, gửi hóa đơn, theo dõi thanh toán."
+    },
+    "providers": {
+      "title": "🏪 Quản lý Nhà cung cấp",
+      "description": "Module quản lý nhà cung cấp đang được chuẩn bị.\nTính năng: Thêm nhà cung cấp, quản lý hợp đồng, theo dõi thanh toán."
+    },
+    "analytics": {
+      "title": "📊 Bảng điều khiển Phân tích",
+      "description": "Module phân tích đang được chuẩn bị.\nTính năng: Báo cáo tài chính, biểu đồ, thông tin kinh doanh."
+    },
+    "transactions": {
+      "title": "💳 Quản lý Giao dịch",
+      "description": "Module giao dịch đang được chuẩn bị.\nTính năng: Ghi nhận giao dịch, phân loại chi phí, theo dõi thu nhập."
+    },
+    "reports": {
+      "title": "📈 Báo cáo & Phân tích",
+      "description": "Module báo cáo đang được chuẩn bị.\nTính năng: Tạo báo cáo, xuất dữ liệu, phân tích tài chính."
+    },
+    "coming_soon": "🚧 Sắp ra mắt"
+  },
+  "buttons": {
+    "ok": "Đồng ý",
+    "cancel": "Hủy bỏ",
+    "save": "Lưu",
+    "close": "Đóng",
+    "settings": "⚙️ Cài đặt",
+    "logout": "🔴 Đăng xuất"
+  },
+  "messages": {
+    "success": "Thành công",
+    "error": "Lỗi",
+    "warning": "Cảnh báo",
+    "info": "Thông tin",
+    "coming_soon": "Module này sẽ sớm được cung cấp!",
+    "logout_confirm": "Bạn có chắc chắn muốn đăng xuất?\n\nNgười dùng: {user}\nCông ty: {company}"
+  }
+}

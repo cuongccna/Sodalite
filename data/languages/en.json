@@ -1,0 +1,103 @@
+{
+  "app": {
+    "title": "FinanTidy",
+    "subtitle": "Enterprise Financial Management System",
+    "version": "Version 2.0 - Professional Edition with Viettel eInvoice Integration"
+  },
+  "login": {
+    "title": "FinanTidy Login",
+    "username": "Username",
+    "username_placeholder": "Enter your username",
+    "password": "Password",
+    "password_placeholder": "Enter your password",
+    "remember_me": "Remember me",
+    "forgot_password": "Forgot Password?",
+    "login_button": "🔐 SIGN IN",
+    "cancel_button": "❌ CANCEL",
+    "demo_title": "🔑 Default Login Credentials",
+    "demo_info": "Username: admin  •  Password: admin",
+    "login_error": "Login Error",
+    "login_failed": "Login Failed",
+    "invalid_credentials": "Invalid username or password!",
+    "fill_all_fields": "Please enter both username and password",
+    "signing_in": "Signing In..."
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "invoices": "Invoices",
+    "providers": "Providers",
+    "analytics": "Analytics",
+    "transactions": "Transactions",
+    "reports": "Reports"
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {name}! 👋",
+    "welcome_subtitle": "Here's what's happening with your finances today",
+    "recent_activity": "Recent Activity",
+    "quick_actions": "Quick Actions",
+    "view_all": "View All",
+    "total_invoices": "Total Invoices",
+    "providers": "Providers",
+    "stats": {
+      "revenue": "Revenue",
+      "pending": "Pending",
+      "invoices": "Invoices",
+      "providers": "Providers"
+    }
+  },
+  "actions": {
+    "create_invoice": "📄 Create Invoice",
+    "add_provider": "🏪 Add Provider",
+    "record_payment": "💰 Record Payment",
+    "generate_report": "📈 Generate Report",
+    "viettel_einvoice": "📧 Viettel eInvoice",
+    "system_settings": "⚙️ System Settings",
+    "view_analytics": "📊 View Analytics"
+  },
+  "settings": {
+    "title": "System Settings",
+    "language": "Language",
+    "language_desc": "Select interface display language",
+    "appearance": "Appearance",
+    "notifications": "Notifications",
+    "save": "Save Settings",
+    "cancel": "Cancel"
+  },
+  "modules": {
+    "invoices": {
+      "title": "📄 Invoices Management",
+      "description": "Invoice management module is being prepared.\nFeatures: Create, edit, send invoices, track payments."
+    },
+    "providers": {
+      "title": "🏪 Providers Management",
+      "description": "Provider management module is being prepared.\nFeatures: Add providers, manage contracts, track payments."
+    },
+    "analytics": {
+      "title": "📊 Analytics Dashboard",
+      "description": "Analytics module is being prepared.\nFeatures: Financial reports, charts, business insights."
+    },
+    "transactions": {
+      "title": "💳 Transactions Management",
+      "description": "Transaction module is being prepared.\nFeatures: Record transactions, categorize expenses, track income."
+    },
+    "reports": {
+      "title": "📈 Reports & Analysis",
+      "description": "Reports module is being prepared.\nFeatures: Generate reports, export data, financial analysis."
+    },
+    "coming_soon": "🚧 Coming Soon"
+  },
+  "buttons": {
+    "ok": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "close": "Close",
+    "settings": "⚙️ Settings",
+    "logout": "🔴 Logout"
+  },
+  "messages": {
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning",
+    "info": "Information"
+  }
+}

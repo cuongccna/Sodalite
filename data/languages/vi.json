@@ -1,0 +1,103 @@
+{
+  "app": {
+    "title": "FinanTidy",
+    "subtitle": "Hệ thống Quản lý Tài chính Doanh nghiệp",
+    "version": "Phiên bản 2.0 - Phiên bản Professional với Tích hợp Viettel eInvoice"
+  },
+  "login": {
+    "title": "Đăng nhập FinanTidy",
+    "username": "Tên đăng nhập",
+    "username_placeholder": "Nhập tên đăng nhập",
+    "password": "Mật khẩu",
+    "password_placeholder": "Nhập mật khẩu",
+    "remember_me": "Ghi nhớ đăng nhập",
+    "forgot_password": "Quên mật khẩu?",
+    "login_button": "🔐 ĐĂNG NHẬP",
+    "cancel_button": "❌ HỦY BỎ",
+    "demo_title": "🔑 Thông tin Đăng nhập Mặc định",
+    "demo_info": "Tên đăng nhập: admin  •  Mật khẩu: admin",
+    "login_error": "Lỗi đăng nhập",
+    "login_failed": "Đăng nhập thất bại",
+    "invalid_credentials": "Tên đăng nhập hoặc mật khẩu không đúng!",
+    "fill_all_fields": "Vui lòng nhập đầy đủ thông tin đăng nhập",
+    "signing_in": "Đang đăng nhập..."
+  },
+  "navigation": {
+    "dashboard": "Tổng quan",
+    "invoices": "Hóa đơn",
+    "providers": "Nhà cung cấp",
+    "analytics": "Phân tích",
+    "transactions": "Giao dịch",
+    "reports": "Báo cáo"
+  },
+  "dashboard": {
+    "welcome": "Chào mừng trở lại, {name}! 👋",
+    "welcome_subtitle": "Đây là tình hình tài chính của bạn hôm nay",
+    "recent_activity": "Hoạt động Gần đây",
+    "quick_actions": "Thao tác Nhanh",
+    "view_all": "Xem tất cả",
+    "total_invoices": "Tổng hóa đơn",
+    "providers": "Nhà cung cấp",
+    "stats": {
+      "revenue": "Doanh thu",
+      "pending": "Chờ thanh toán",
+      "invoices": "Hóa đơn",
+      "providers": "Nhà cung cấp"
+    }
+  },
+  "actions": {
+    "create_invoice": "📄 Tạo hóa đơn",
+    "add_provider": "🏪 Thêm nhà cung cấp",
+    "record_payment": "💰 Ghi nhận thanh toán",
+    "generate_report": "📈 Tạo báo cáo",
+    "viettel_einvoice": "📧 Viettel eInvoice",
+    "system_settings": "⚙️ Cài đặt hệ thống",
+    "view_analytics": "📊 Xem phân tích"
+  },
+  "settings": {
+    "title": "Cài đặt Hệ thống",
+    "language": "Ngôn ngữ",
+    "language_desc": "Chọn ngôn ngữ hiển thị giao diện",
+    "appearance": "Giao diện",
+    "notifications": "Thông báo",
+    "save": "Lưu cài đặt",
+    "cancel": "Hủy bỏ"
+  },
+  "modules": {
+    "invoices": {
+      "title": "📄 Quản lý Hóa đơn",
+      "description": "Module quản lý hóa đơn đang được chuẩn bị.\nTính năng: Tạo, sửa, gửi hóa đơn, theo dõi thanh toán."
+    },
+    "providers": {
+      "title": "🏪 Quản lý Nhà cung cấp",
+      "description": "Module quản lý nhà cung cấp đang được chuẩn bị.\nTính năng: Thêm nhà cung cấp, quản lý hợp đồng, theo dõi thanh toán."
+    },
+    "analytics": {
+      "title": "📊 Bảng điều khiển Phân tích",
+      "description": "Module phân tích đang được chuẩn bị.\nTính năng: Báo cáo tài chính, biểu đồ, thông tin kinh doanh."
+    },
+    "transactions": {
+      "title": "💳 Quản lý Giao dịch",
+      "description": "Module giao dịch đang được chuẩn bị.\nTính năng: Ghi nhận giao dịch, phân loại chi phí, theo dõi thu nhập."
+    },
+    "reports": {
+      "title": "📈 Báo cáo & Phân tích",
+      "description": "Module báo cáo đang được chuẩn bị.\nTính năng: Tạo báo cáo, xuất dữ liệu, phân tích tài chính."
+    },
+    "coming_soon": "🚧 Sắp ra mắt"
+  },
+  "buttons": {
+    "ok": "Đồng ý",
+    "cancel": "Hủy bỏ",
+    "save": "Lưu",
+    "close": "Đóng",
+    "settings": "⚙️ Cài đặt",
+    "logout": "🔴 Đăng xuất"
+  },
+  "messages": {
+    "success": "Thành công",
+    "error": "Lỗi",
+    "warning": "Cảnh báo",
+    "info": "Thông tin"
+  }
+}

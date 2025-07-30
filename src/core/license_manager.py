@@ -219,3 +219,190 @@ class LicenseManager:
                 result['message'] = 'Gợi ý AI chỉ khả dụng với gói Pro và Agency.'
         
         return result
+    
+    def get_feature_usage_stats(self) -> Dict[str, Any]:
+        """
+        Get usage statistics for current license
+        
+        Returns:
+            Dict[str, Any]: Usage statistics
+        """
+        if not self._current_license:
+            return {}
+        
+        license_type = self._current_license.get('license_type', 'free')
+        features = self.LICENSE_FEATURES.get(license_type, {})
+        
+        try:
+            # Count current companies
+            with self.db_manager.get_session() as session:
+                from database.models import Company, UserCompanyAccess
+                
+                company_count = session.query(Company).join(
+                    UserCompanyAccess,
+                    Company.id == UserCompanyAccess.company_id
+                ).filter(
+                    UserCompanyAccess.user_id == self.current_license['user_id']
+                ).count()
+            
+            # Calculate usage percentages
+            max_companies = features.get('max_companies', 1)
+            company_usage = (company_count / max_companies * 100) if max_companies > 0 else 0
+            
+            return {
+                'license_type': license_type,
+                'companies': {
+                    'current': company_count,
+                    'max': max_companies,
+                    'usage_percent': min(company_usage, 100)
+                },
+                'invoices_this_month': {
+                    'current': 0,  # TODO: Calculate from invoice data
+                    'max': features.get('max_invoices_per_month', 100),
+                    'usage_percent': 0
+                },
+                'available_integrations': features.get('api_integrations', []),
+                'export_formats': features.get('export_formats', []),
+                'premium_features': {
+                    'ai_suggestions': features.get('ai_suggestions', False),
+                    'advanced_reports': features.get('advanced_reports', False),
+                    'multi_user': features.get('multi_user', False),
+                    'priority_support': features.get('priority_support', False)
+                }
+            }
+            
+        except Exception as e:
+            print(f"Error getting usage stats: {e}")
+            return {
+                'license_type': license_type,
+                'error': str(e)
+            }
+    
+    def check_upgrade_recommendations(self) -> List[Dict[str, Any]]:
+        """
+        Check if user should upgrade license based on usage
+        
+        Returns:
+            List[Dict[str, Any]]: Upgrade recommendations
+        """
+        stats = self.get_feature_usage_stats()
+        recommendations = []
+        
+        if not stats or 'error' in stats:
+            return recommendations
+        
+        license_type = stats['license_type']
+        
+        # Check company limit
+        if stats['companies']['usage_percent'] > 80:
+            if license_type == 'free':
+                recommendations.append({
+                    'type': 'company_limit',
+                    'message': 'Bạn đang sử dụng gần hết giới hạn công ty. Nâng cấp Pro để quản lý 3 công ty.',
+                    'suggested_plan': 'pro',
+                    'priority': 'high'
+                })
+            elif license_type == 'pro':
+                recommendations.append({
+                    'type': 'company_limit',
+                    'message': 'Bạn đang sử dụng gần hết giới hạn công ty. Nâng cấp Agency để không giới hạn.',
+                    'suggested_plan': 'agency',
+                    'priority': 'medium'
+                })
+        
+        # Check invoice limit
+        if stats['invoices_this_month']['usage_percent'] > 80:
+            if license_type == 'free':
+                recommendations.append({
+                    'type': 'invoice_limit',
+                    'message': 'Bạn đang sử dụng gần hết giới hạn hóa đơn tháng này. Nâng cấp Pro để xử lý 1000 hóa đơn/tháng.',
+                    'suggested_plan': 'pro',
+                    'priority': 'high'
+                })
+        
+        # Suggest features
+        if license_type == 'free':
+            recommendations.append({
+                'type': 'feature_upgrade',
+                'message': 'Nâng cấp Pro để sử dụng AI gợi ý, báo cáo nâng cao và tích hợp Viettel API.',
+                'suggested_plan': 'pro',
+                'priority': 'low'
+            })
+        
+        return recommendations
+    
+    def get_plan_comparison(self) -> Dict[str, Any]:
+        """
+        Get plan comparison for upgrade UI
+        
+        Returns:
+            Dict[str, Any]: Plan comparison data
+        """
+        return {
+            'plans': {
+                'free': {
+                    'name': 'Miễn phí',
+                    'price': 0,
+                    'currency': 'VND',
+                    'period': 'month',
+                    'features': self.LICENSE_FEATURES['free'],
+                    'highlight': False
+                },
+                'pro': {
+                    'name': 'Chuyên nghiệp',
+                    'price': 299000,
+                    'currency': 'VND',
+                    'period': 'month',
+                    'features': self.LICENSE_FEATURES['pro'],
+                    'highlight': True,
+                    'discount': '20% off first 3 months'
+                },
+                'agency': {
+                    'name': 'Đại lý',
+                    'price': 999000,
+                    'currency': 'VND',
+                    'period': 'month',
+                    'features': self.LICENSE_FEATURES['agency'],
+                    'highlight': False,
+                    'contact_sales': True
+                }
+            },
+            'current_plan': self.get_license_type(),
+            'recommendations': self.check_upgrade_recommendations()
+        }
+    
+    def can_use_provider(self, provider_type: str) -> bool:
+        """
+        Check if current license can use specific provider
+        
+        Args:
+            provider_type: Provider type (e.g., 'viettel', 'mobifone')
+            
+        Returns:
+            bool: True if allowed
+        """
+        if not self.current_license:
+            return False
+        
+        license_type = self.current_license.get('license_type', 'free')
+        allowed_integrations = self.LICENSE_FEATURES.get(license_type, {}).get('api_integrations', [])
+        
+        return provider_type.lower() in allowed_integrations
+    
+    def can_export_format(self, format_type: str) -> bool:
+        """
+        Check if current license can export in specific format
+        
+        Args:
+            format_type: Export format (e.g., 'excel', 'pdf')
+            
+        Returns:
+            bool: True if allowed
+        """
+        if not self.current_license:
+            return False
+        
+        license_type = self.current_license.get('license_type', 'free')
+        allowed_formats = self.LICENSE_FEATURES.get(license_type, {}).get('export_formats', [])
+        
+        return format_type.lower() in allowed_formats
